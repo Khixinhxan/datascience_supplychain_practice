@@ -7,11 +7,14 @@ Created on Sun Sep  6 00:01:41 2020
 """
 
 import pandas as pd
+import os 
+path  = os.getcwd()
+print(path)
 
-flights= pd.read_csv('flights.csv')
-planes= pd.read_csv('planes.csv')
-airlines= pd.read_csv('airlines.csv')
-airports=pd.read_csv('airports.csv')
+flights= pd.read_csv('{0}/flights.csv'.format(path))
+planes= pd.read_csv('{0}/planes.csv'.format(path))
+airlines= pd.read_csv('{0}/airlines.csv'.format(path))
+airports=pd.read_csv('{0}/airports.csv'.format(path))
 
 
 flights.columns
@@ -96,9 +99,3 @@ pd.merge(planes[['tailnum','model','manufacturer']],airplanes_use).groupby(['mod
 
 
 
-
-I have attached a script that has the answers to these questions but before you check the answers, please try to answer for these questions on your own :)
-
-All the Best,
-Haytham
-Rescale Analytics

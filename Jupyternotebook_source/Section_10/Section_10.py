@@ -8,8 +8,10 @@ Created on Tue Aug 11 22:35:47 2020
 import pandas as pd
 import numpy as np
 import seaborn as sns
-
-retail_clean= pd.read_csv('/Users/dang/Desktop/Learning/DataScience_SupplyChain/Jupyternotebook_source/Section_9/retail_clean.csv')
+import os 
+path  = os.getcwd()
+print(path)
+retail_clean= pd.read_csv('{0}/retail_clean.csv'.format(path))
 
 retail_clean.info()
 retail_clean.InvoiceDate

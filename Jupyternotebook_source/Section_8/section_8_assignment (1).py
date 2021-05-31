@@ -20,10 +20,12 @@ Created on Sun Sep  6 12:54:56 2020
 
 import pandas as pd
 import seaborn as sns
-
-twenty= pd.read_csv('twentyeleven.csv')
-cars= pd.read_csv('cars.csv')
-iris=pd.read_csv('iris.csv')
+import os 
+path  = os.getcwd()
+print(path)
+twenty= pd.read_csv('{0}/twentyeleven.csv'.format(path))
+cars= pd.read_csv('{0}/cars.csv'.format(path))
+iris=pd.read_csv('{0}/iris.csv'.format(path))
 
 twenty.info()
 twenty['InvoiceDate']=pd.to_datetime(twenty['InvoiceDate'])

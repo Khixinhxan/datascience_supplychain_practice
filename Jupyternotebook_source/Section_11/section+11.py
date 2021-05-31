@@ -14,9 +14,11 @@ import numpy as np
 import statsmodels.api as sm
 import matplotlib.pyplot as plt
 plt.style.use('fivethirtyeight')
+import os
+path = os.getcwd()
+print(path)
 
-
-time_series= pd.read_csv('timeseries.csv',parse_dates=True)
+time_series= pd.read_csv('{}/Jupyternotebook_source/Section_11/timeseries.csv'.format(path),parse_dates=True)
 time_series.info()
 time_series['date']= pd.to_datetime(time_series['date'])
 time_series['date']

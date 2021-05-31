@@ -13,7 +13,10 @@ Created on Sat Sep  5 21:05:20 2020
 # part 1:
     
 import pandas as pd
-cars=pd.read_csv('cars.csv')   
+import os 
+path  = os.getcwd()
+print(path)
+cars=pd.read_csv('{0}/cars.csv'.format(path))   
     
 cars.head()
 cars.columns

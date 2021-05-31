@@ -12,11 +12,13 @@ Created on Sun Sep  6 15:12:17 2020
 
 import pandas as pd
 import inventorize as inv
-
+import os 
+path  = os.getcwd()
+print(path)
 
 # 1- Import twenty eleven.
 
-twenty= pd.read_csv('twentyeleven.csv')
+twenty= pd.read_csv('{0}/twentyeleven.csv'.format(path))
 
 twenty.columns
 
