@@ -106,6 +106,7 @@ results_ARima.aic
 
 results_ARima.plot_diagnostics(figsize=(15, 12))
 
+#---
 
 import itertools       
            
