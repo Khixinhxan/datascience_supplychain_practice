@@ -1,0 +1,32 @@
+Notation of the queue model
+The tow main inputs for any queue system are:
+     ^ (Lambda): average number of arrivals per time period
+     M (MU): average number of customers served per time period
+
+The standard notation system to classify a queueing system is A/B/C/K/M, where
+    A: represents the probability distribution for the arrival process
+    B: represents the probability distribution for the service process
+    C: represents the number of channels (service)
+    K: represents the maximum number of customer allowed in the queueing system
+    M: represents the maximum number of customers in total
+
+Commom option for a and b 
+
+M for a poission arrival distribution (Thus, exponential inter-arrival distribution)
+or an exponential service time distribution
+    D for A deterministic of constant value
+    EK for an erlang distribution of order K
+    G for A general distribution with known mean and variance
+
+
+Parametes we look for 
+
+RO (P): overall system utilization
+PO: the probability that all servers are idle
+LQ: long-run average number of customer in the queue 
+WQ: long-run average time spent in the queue
+X: system throughput
+L: long-run average number of customer in the system
+W: long-run average time spent in the system
+WQQ: long-run average time spent in queue when there is queue in a queueing model
+LQQ: long-run average number of customers in queue when there is queue in a queueing model
