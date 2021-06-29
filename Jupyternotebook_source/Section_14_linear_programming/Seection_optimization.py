@@ -48,8 +48,6 @@ keys= [(f,p,c) for f in factory for p in products for c in customers]
 
 var= LpVariable.dicts('shipment', keys,0,None,cat='Integer')
 
-
-
 costs_value= [50,80,50,
         60,90,60,
         70,90,70,
@@ -58,8 +56,6 @@ costs_value= [50,80,50,
         90,70,90]
 
 costs= dict(zip(keys,costs_value))
-
-
 
 
 demand_keys= [(p,c)for c in customers
