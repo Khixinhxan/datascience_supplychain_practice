@@ -1,0 +1,5 @@
+RFM is one of the best tolls to segmennt customers of your business and it heavily used in marketing
+
+R stands for recency
+F stands for frequency
+M stand for monetary value
